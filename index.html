@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano de Treino - Lucas</title>
     <style>
-        /* Resetando alguns estilos padrão */
+        /* Resetando todos os estilos */
         * {
             margin: 0;
             padding: 0;
@@ -14,79 +14,88 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(145deg, #e3f2fd, #bbdefb);
-            color: #333;
+            background-color: #121212;
+            color: #fff;
             line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #d32f2f;
+            color: white;
             text-align: center;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 50px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
             font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
 
         .container {
-            width: 80%;
+            width: 85%;
             margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: #1d1d1d;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .workout-section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #d32f2f;
         }
 
         .workout-section h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
-            color: #00796b;
+            color: #d32f2f;
+            margin-bottom: 10px;
         }
 
         .workout-section h3 {
             font-size: 1.5rem;
+            color: #d32f2f;
             margin-top: 15px;
-            color: #00796b;
         }
 
         .exercise-list {
-            list-style: none;
+            list-style-type: none;
             padding-left: 20px;
+            margin-top: 10px;
         }
 
         .exercise-list li {
-            background-color: #f1f1f1;
-            margin: 8px 0;
-            padding: 12px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: #333;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
         .exercise-list li:hover {
-            background-color: #b2dfdb;
+            background-color: #d32f2f;
+            color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
             cursor: pointer;
-            transition: background-color 0.3s;
         }
 
-        .footer {
-            background-color: #333;
-            color: #fff;
+        footer {
+            background-color: #121212;
+            color: #d32f2f;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
         }
 
-        .footer p {
-            font-size: 1rem;
+        footer p {
+            margin-top: 10px;
         }
 
         @media (max-width: 768px) {
@@ -95,7 +104,7 @@
             }
 
             header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .workout-section h2 {
@@ -103,7 +112,7 @@
             }
 
             .workout-section h3 {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             .exercise-list li {
@@ -199,7 +208,7 @@
     </div>
 </div>
 
-<footer class="footer">
+<footer>
     <p>&copy; 2024 Lucas - Plano de Treino</p>
 </footer>
 
