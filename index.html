@@ -5,51 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano de Treino - Lucas</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Resetando alguns estilos padrão */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(145deg, #e3f2fd, #bbdefb);
+            color: #333;
+            line-height: 1.6;
+        }
+
         header {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
         .container {
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #333;
+
+        .workout-section {
+            margin-bottom: 40px;
         }
-        .workout {
+
+        .workout-section h2 {
+            font-size: 2rem;
             margin-bottom: 20px;
+            color: #00796b;
         }
-        .workout h3 {
-            color: #444;
+
+        .workout-section h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #00796b;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+
+        .exercise-list {
+            list-style: none;
+            padding-left: 20px;
         }
-        li {
-            background-color: #eaeaea;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+
+        .exercise-list li {
+            background-color: #f1f1f1;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        footer {
+
+        .exercise-list li:hover {
+            background-color: #b2dfdb;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: absolute;
+            padding: 20px;
+            position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        .footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .workout-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .workout-section h3 {
+                font-size: 1.2rem;
+            }
+
+            .exercise-list li {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -60,10 +119,12 @@
 </header>
 
 <div class="container">
-    <div class="workout">
+    <!-- Treino A -->
+    <div class="workout-section">
         <h2>Treino A - Peito, Tríceps e Abdômen</h2>
+        
         <h3>Peito</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Supino reto: 4 séries até a falha</li>
             <li>Supino inclinado com halteres: 4 séries até a falha</li>
             <li>Crossover: 4 séries até a falha</li>
@@ -71,23 +132,25 @@
         </ul>
 
         <h3>Tríceps</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Tríceps testa: 4 séries até a falha</li>
             <li>Mergulho entre bancos: 4 séries até a falha</li>
             <li>Extensão de tríceps com corda: 4 séries até a falha</li>
         </ul>
 
         <h3>Abdômen</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Máquina de abdômen: 3-4 séries até a falha</li>
             <li>Prancha (segure por 30-60 segundos): 3 séries</li>
         </ul>
     </div>
 
-    <div class="workout">
+    <!-- Treino B -->
+    <div class="workout-section">
         <h2>Treino B - Costas, Bíceps e Trapézio</h2>
+
         <h3>Costas</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Puxada na frente (pulldown): 4 séries até a falha</li>
             <li>Remada com barra (ou remada unilateral com halteres): 4 séries até a falha</li>
             <li>Remada baixa com pegada neutra: 4 séries até a falha</li>
@@ -95,23 +158,25 @@
         </ul>
 
         <h3>Bíceps</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Rosca direta: 4 séries até a falha</li>
             <li>Rosca martelo: 4 séries até a falha</li>
             <li>Rosca concentrada: 4 séries até a falha</li>
         </ul>
 
         <h3>Trapézio</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Encolhimento de ombros com barra ou halteres: 4 séries até a falha</li>
             <li>Remada alta: 4 séries até a falha</li>
         </ul>
     </div>
 
-    <div class="workout">
+    <!-- Treino C -->
+    <div class="workout-section">
         <h2>Treino C - Pernas, Ombros e Abdômen</h2>
+
         <h3>Pernas</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Agachamento livre: 4 séries até a falha</li>
             <li>Leg press: 4 séries até a falha</li>
             <li>Cadeira extensora: 4 séries até a falha (foco no quadríceps)</li>
@@ -119,7 +184,7 @@
         </ul>
 
         <h3>Ombros</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Desenvolvimento com halteres: 4 séries até a falha</li>
             <li>Elevação lateral de ombro: 4 séries até a falha</li>
             <li>Remada alta: 4 séries até a falha</li>
@@ -127,14 +192,14 @@
         </ul>
 
         <h3>Abdômen</h3>
-        <ul>
+        <ul class="exercise-list">
             <li>Máquina de abdômen: 3-4 séries até a falha</li>
             <li>Prancha lateral: 3 séries de 30 segundos para cada lado</li>
         </ul>
     </div>
 </div>
 
-<footer>
+<footer class="footer">
     <p>&copy; 2024 Lucas - Plano de Treino</p>
 </footer>
 
